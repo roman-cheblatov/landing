@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Системные расстановки | Восстановление порядков любви</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Базовые настройки (Reset & Variables) --- */
+        :root {
+            --color-bg: #F9F8F4;        /* Молочный фон */
+            --color-text: #2C3E50;      /* Темно-синий текст */
+            --color-primary: #6B8E73;   /* Шалфейный зеленый */
+            --color-accent: #C5A880;    /* Песочный/Золотистый */
+            --color-white: #ffffff;
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a2633;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* --- Утилиты --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .text-center { text-align: center; }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 15px 35px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #55725b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(107, 142, 115, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        /* --- Header --- */
+        header {
+            padding: 20px 0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .menu a {
+            margin-left: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+        
+        .menu a:hover { opacity: 1; color: var(--color-primary); }
+
+        /* --- Hero Section --- */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(249,248,244,0.7), rgba(249,248,244,0.9)), 
+                        url('https://images.unsplash.com/photo-1518531933037-9a84763174e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        /* --- Pain Points --- */
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .pain-card {
+            background: var(--color-white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-top: 3px solid var(--color-primary);
+        }
+
+        .pain-card h3 { font-size: 1.4rem; }
+
+        /* --- Method --- */
+        .bg-accent { background-color: #EFECE6; }
+        
+        .method-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .method-text { flex: 1; }
+        .method-img { 
+            flex: 1;
+            height: 400px;
+            background-color: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .method-img img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* --- Formats --- */
+        .formats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .format-card {
+            background: var(--color-white);
+            border: 1px solid #e0e0e0;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .format-card:hover {
+            border-color: var(--color-primary);
+            box-shadow: 0 10px 30px rgba(107, 142, 115, 0.15);
+        }
+
+        .format-price {
+            font-size: 1.5rem;
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            margin: 20px 0;
+            font-weight: 700;
+        }
+
+        /* --- Expert --- */
+        .expert-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .expert-photo {
+            flex: 0 0 350px;
+            height: 450px;
+            background-color: #ccc;
+            border-radius: 8px;
+        }
+        
+        .expert-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+
+        .expert-info ul { margin-top: 20px; }
+        .expert-info li { margin-bottom: 10px; padding-left: 20px; position: relative; }
+        .expert-info li::before {
+            content: "•";
+            color: var(--color-primary);
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        /* --- Form --- */
+        .form-box {
+            background: var(--color-white);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-size: 0.9rem; }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        footer {
+            background-color: #1a2633;
+            color: #fff;
+            padding: 50px 0;
+            margin-top: 80px;
+        }
+        
+        footer h3 { color: #fff; }
+        
+        /* --- Mobile --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .method-content, .expert-container { flex-direction: column; }
+            .expert-photo { width: 100%; height: 350px; flex: none; }
+            .menu { display: none; } /* Упрощено для примера */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-flex">
+            <div class="logo">Расстановки</div>
+            <nav class="menu">
+                <a href="#about">О методе</a>
+                <a href="#formats">Форматы</a>
+                <a href="#expert">Ведущий</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Распутайте узлы судьбы <br>методом системных расстановок</h1>
+            <p>Найдите скрытые причины проблем, восстановите порядок в семейной системе и верните себе право на собственную счастливую жизнь.</p>
+            <a href="#contacts" class="btn">Записаться на диагностику</a>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Знакомо ли вам это чувство?</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 40px;">Часто причина лежит не в вас лично, а в истории вашей семьи, о которой вы можете даже не знать.</p>
+            
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <h3>Повторяющиеся сценарии</h3>
+                    <p>Вы наступаете на одни и те же грабли в отношениях или карьере, хотя все понимаете головой, но не можете остановиться.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>Чужое место</h3>
+                    <p>Стойкое ощущение, что вы живете не свою жизнь или несете тяжелый груз ответственности, который вам не принадлежит.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>Финансовые потолки</h3>
+                    <p>Деньги утекают сквозь пальцы, либо вы упираетесь в невидимый барьер доходов, который невозможно пробить логикой.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>Сложные отношения</h3>
+                    <p>Конфликты с родителями, невозможность создать семью, любовные треугольники или зависимость от партнера.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding bg-accent">
+        <div class="container">
+            <div class="method-content">
+                <div class="method-text">
+                    <h2>Как это работает?</h2>
+                    <p><strong>Семья — это система.</strong> Если кто-то из предков был исключен, забыт или несправедливо обижен, баланс нарушается. Потомки бессознательно «доигрывают» чужие роли из любви и лояльности к роду.</p>
+                    <br>
+                    <p>В расстановке мы делаем скрытое явным. С помощью заместителей мы видим динамики, которые управляют вашей жизнью, и восстанавливаем «Порядки Любви».</p>
+                    <br>
+                    <p>Результат — каждый член системы занимает свое законное место. Энергия начинает течь свободно, симптомы уходят, и вы получаете свободу жить свою судьбу.</p>
+                </div>
+                <div class="method-img">
+                    <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Расстановка в группе">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formats" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Форматы участия</h2>
+            <div class="formats-grid">
+                
+                <div class="format-card">
+                    <h3>Заместитель</h3>
+                    <p>Участие в групповом процессе без своего запроса.</p>
+                    <div class="format-price">1 000 ₽</div>
+                    <p style="font-size: 0.9em; margin-bottom: 20px;">Отлично подходит для знакомства с методом. Вы получаете инсайты через резонанс с историями других людей.</p>
+                    <a href="#contacts" class="btn btn-outline">Записаться</a>
+                </div>
+
+                <div class="format-card" style="border-color: var(--color-primary); transform: scale(1.05);">
+                    <h3>Клиентский запрос</h3>
+                    <p>Полноценный разбор вашей ситуации в группе.</p>
+                    <div class="format-price">7 000 ₽</div>
+                    <p style="font-size: 0.9em; margin-bottom: 20px;">Максимальная наглядность и глубина. Группа помогает увидеть проблему со стороны и найти решение.</p>
+                    <a href="#contacts" class="btn">Выбрать</a>
+                </div>
+
+                <div class="format-card">
+                    <h3>Индивидуально</h3>
+                    <p>Работа тет-а-тет (онлайн или очно).</p>
+                    <div class="format-price">10 000 ₽</div>
+                    <p style="font-size: 0.9em; margin-bottom: 20px;">Полная конфиденциальность. Работа на фигурках или напольных якорях. Глубокое погружение.</p>
+                    <a href="#contacts" class="btn btn-outline">Записаться</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="expert" class="section-padding bg-accent">
+        <div class="container">
+            <div class="expert-container">
+                <div class="expert-photo">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Фото специалиста">
+                </div>
+                <div class="expert-info">
+                    <h2>Имя Фамилия</h2>
+                    <p class="subtitle">Сертифицированный системный расстановщик, психолог</p>
+                    <br>
+                    <p>«Я не чиню вашу жизнь, я помогаю вам увидеть правду, которая исцеляет. Моя задача — бережно провести вас через боль к принятию и ресурсу.»</p>
+                    <ul>
+                        <li>Диплом Института Интегративной Семейной Терапии (Москва)</li>
+                        <li>Более 500 проведенных расстановок</li>
+                        <li>Опыт практики 7 лет</li>
+                        <li>Член ассоциации расстановщиков</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section-padding" style="padding-bottom: 0;">
+        <div class="container text-center">
+            <h2>Готовы занять своё место?</h2>
+            <p style="margin-bottom: 40px;">Оставьте заявку, и я свяжусь с вами для уточнения деталей.</p>
+            
+            <div class="form-box">
+                <form action="#" method="POST"> <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Иван" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" placeholder="+7 (999) 000-00-00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Формат участия</label>
+                        <select id="type">
+                            <option>Клиентский запрос</option>
+                            <option>Заместитель</option>
+                            <option>Индивидуальная работа</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Отправить заявку</button>
+                </form>
+                <p style="font-size: 0.8rem; color: #777; margin-top: 15px;">Ваши данные в безопасности и не будут переданы третьим лицам.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container text-center">
+                <h3>Расстановки по Хеллингеру</h3>
+                <p style="opacity: 0.7; margin: 10px 0;">+7 (999) 000-00-00 | email@example.com</p>
+                <div style="margin-top: 20px; font-size: 0.8rem; opacity: 0.5;">
+                    &copy; 2024 Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>
