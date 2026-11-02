@@ -107,7 +107,7 @@
  {
   "name": "7.29 не входить до балу (26 оцінюваних, 1 без оцінювання), картка показує умовний ключ і наукове визначення",
   "pass": true,
-  "extra": "{\"good\":26,\"bad\":0,\"unkeyed\":1,\"total\":26,\"condLabel\":true,\"sciDef\":true,\"scoreText\":\"26 / 26 за навчальним ключем\",\"item\":{\"attempts\":1,\"correct\":0,\"wrong\":0,\"confidence\":0,\"streak\":0,\"recovery\":0,\"pending\":false,\"lastAt\":1793663163167,\"lastSession\":1,\"dueSession\":5,\"dueAt\":1793835963167}}"
+  "extra": "{\"good\":26,\"bad\":0,\"unkeyed\":1,\"total\":26,\"condLabel\":true,\"sciDef\":true,\"scoreText\":\"26 / 26 за навчальним ключем\",\"item\":{\"attempts\":1,\"correct\":0,\"wrong\":0,\"confidence\":0,\"streak\":0,\"recovery\":0,\"pending\":false,\"lastAt\":1793663346842,\"lastSession\":1,\"dueSession\":5,\"dueAt\":1793836146842}}"
  },
  {
   "name": "Експорт прогресу (структура) доступний",
@@ -122,7 +122,7 @@
  {
   "name": "Картка відкривається",
   "pass": true,
-  "extra": "Е. Толмен"
+  "extra": "У. Кеннон"
  },
  {
   "name": "Мінітест показує варіанти",
