@@ -4,6 +4,14 @@ from openpyxl.styles import Font, Alignment, PatternFill
 from openpyxl.utils import get_column_letter
 S = sys.argv[1]; D = f"{S}/out/deliver/2_Реєстри"
 final = json.load(open(f"{S}/work/final.json", encoding="utf-8"))
+import csv as _csv
+sys.path.insert(0, f"{S}/work"); import arb_sources
+_wb1 = openpyxl.load_workbook(f"{S}/in/xlsx/exp.xlsx", data_only=True)
+_r = list(_wb1["ПсихоПам’ять 65"].iter_rows(values_only=True)); _h = _r[0]
+CARD1 = {d["ID"]: d for d in (dict(zip(_h, x)) for x in _r[1:])}
+_wb2 = openpyxl.load_workbook(f"{S}/in/exp2/2_Реєстри/Реєстр_експертизи_держіспит_СНУ_2026.xlsx", data_only=True)
+_r = list(_wb2["Картки (65)"].iter_rows(values_only=True)); _h = _r[0]
+CARD2 = {d["ID"]: d for d in (dict(zip(_h, x)) for x in _r[1:])}
 cards = json.load(open(f"{S}/work/cards_final.json", encoding="utf-8"))
 all_ = json.load(open(f"{S}/work/all.json", encoding="utf-8"))
 C = {t:{c["id"]:c for c in all_[t]["cards"]} for t in all_}
@@ -50,15 +58,17 @@ sheet("Підсумок", ["Показник", "Значення"], summary, [60
 hdr = ["ID","№ у збірнику 2026","№ (стара нумерація тренажера)","Дисципліна","Запитання","Варіанти",
        "Ключ тренажера (до експертиз)","Ключ експертизи 1","Ключ експертизи 2","ОСТАТОЧНИЙ КЛЮЧ","Статус арбітражу","Впевненість","Пул у тренажері",
        "Позначено спірним (1 — експертиза 1, 2 — експертиза 2)","Статус експертизи 1","Рівень підтвердження (експ. 1)","Категорія експертизи 2","Впевненість (експ. 2)",
-       "Обґрунтування арбітражу","Джерела арбітражу (перевірено в сесії)","Джерела експертизи 1","Джерело експертизи 2","Дефект формулювання (експ. 1)","Зауваження сліпого проходу (експ. 1)","Зауваження у тренажері (warning)"]
+       "Обґрунтування арбітражу","Джерела арбітражу (перевірено в сесії; рівень доступу вказано)","Обґрунтування експертизи 1","Джерела експертизи 1","Обґрунтування експертизи 2","Джерело експертизи 2","Дефект формулювання (експ. 1)","Зауваження сліпого проходу (експ. 1)","Зауваження у тренажері (warning)"]
 rows = []
 for r in final:
     opts = " ".join(f"{LAT2CYR.get(i,i).lower()}) {lab}" for i,lab in r["options"])
     rows.append([r["id"], r["sourceId"], r["sourceId_old"], r["subject"], r["question"], opts,
                  cyr(r["key_orig"]) if r["gradeable_orig"] else "— (не оцінювалось)", cyr(r["key_exp1"]), cyr(r["key_exp2"]), cyr(r["key_final"]), r["status"], r["conf"],
                  "надійний" if r["pool"]=="safe" else "спірні/умовні", r["flagged_by"] or "—", r["exp1_status"], r["exp1_level"], r["exp2_cat"], r["exp2_conf"],
-                 r["basis"], r["arb_sources"], r["exp1_sources"], r["exp2_source"], r["exp1_defect"], r["exp1_blind"], r["warning"]])
-sheet("Питання (290)", hdr, rows, [8,9,9,22,45,60,10,8,8,10,16,10,12,10,16,14,18,10,60,50,50,30,30,40,50])
+                 r["basis"], r["arb_sources"], r["exp1_rationale"], r["exp1_sources"], r["exp2_rationale"], r["exp2_source"], r["exp1_defect"], r["exp1_blind"], r["warning"]])
+sheet("Питання (290)", hdr, rows, [8,9,9,22,45,60,10,8,8,10,16,10,12,10,16,14,18,10,60,50,50,50,50,30,30,40,50])
+with open(f"{D}/Реєстр_290_питань_арбітраж.csv","w",encoding="utf-8-sig",newline="") as f:
+    w=_csv.writer(f, delimiter=";"); w.writerow(hdr); w.writerows(rows)
 
 # ---- Розбіжності експертиз
 hdr2 = ["ID","№","Тип розбіжності","Експертиза 1","Експертиза 2","Рішення арбітражу","Підстава"]
@@ -76,14 +86,26 @@ for r in final:
 sheet("Розбіжності експертиз", hdr2, rows2, [8,8,30,40,40,30,80])
 
 # ---- Картки (65)
-hdr3 = ["ID","Категорія","Запитання","Сигнал (cue)","Відповідь картки","Ключ тесту (остаточний)","Збіг з ключем","Статус арбітражу","Нотатка (остаточна)","Асоціація (остаточна)","Зауваження (warning)","Що змінено відносно оригіналу"]
+hdr3 = ["ID","Категорія","Запитання","Сигнал (cue)","Відповідь картки","Ключ тесту (остаточний)","Збіг з ключем","Статус арбітражу","Впевненість (арбітраж)","Статус експертизи 1 (картка)","Нове попередження експ. 1","Вердикт експертизи 2 (картка)","Впевненість експ. 2","Зауваження експ. 2","Нотатка (остаточна)","Асоціація (остаточна)","Зауваження (warning)","Що змінено відносно оригіналу"]
 rows3 = []
 for c in cards:
     i = c["id"]; r = fin[i]; o = C["orig"][i]
     right = next(lab for k,lab in r["options"] if k==r["key_final"])
     changed = [k for k in ("note","association","warning","status","options") if o[k]!=c[k]]
-    rows3.append([i, {"authors":"Автори й теорії","dates":"Дати","terms":"Поняття"}.get(c["cat"], c["cat"]), c["question"], c["cue"], c["answer"], right, "так", r["status"], c["note"], c["association"], c["warning"], ", ".join(changed) or "—"])
-sheet("Картки (65)", hdr3, rows3, [8,14,45,30,25,25,8,16,50,40,50,20])
+    c1, c2 = CARD1[i], CARD2[i]
+    rows3.append([i, {"authors":"Автори й теорії","dates":"Дати","terms":"Поняття"}.get(c["cat"], c["cat"]), c["question"], c["cue"], c["answer"], right, "так", r["status"], r["conf"],
+                  c1.get("Статус завдання (аудит)") or "", c1.get("Нове попередження") or "", c2.get("Вердикт експертизи") or "", c2.get("Впевненість") or "", c2.get("Зауваження") or "",
+                  c["note"], c["association"], c["warning"], ", ".join(changed) or "—"])
+sheet("Картки (65)", hdr3, rows3, [8,14,45,30,25,25,8,16,10,16,40,16,10,30,50,40,50,20])
+with open(f"{D}/Реєстр_65_карток_арбітраж.csv","w",encoding="utf-8-sig",newline="") as f:
+    w=_csv.writer(f, delimiter=";"); w.writerow(hdr3); w.writerows(rows3)
+# ---- Джерела арбітражу
+hdr5 = ["ID","№","Статус арбітражу","Джерело","Посилання","Фрагмент / що підтверджує","Рівень доступу в сесії"]
+rows5 = []
+for r in final:
+    for s in arb_sources.SRC.get(r["id"], []):
+        rows5.append([r["id"], r["sourceId"], r["status"], s["src"], s["url"], s["fragment"], s["access"]])
+sheet("Джерела арбітражу", hdr5, rows5, [8,8,16,50,50,80,24])
 
 # ---- Журнал змін тренажера
 hdr4 = ["Файл","ID / місце","Поле","Зміна"]
@@ -114,7 +136,7 @@ for r in final:
     md.append(f'| {r["id"]} | {r["sourceId"]} | {k0} / {cyr(r["key_exp1"])} / {cyr(r["key_exp2"])} / **{cyr(r["key_final"])}** | {r["status"]} | {r["conf"]} | {("Е"+", Е".join(r["flagged_by"])) if r["flagged_by"] else "—"} | {r["basis"].replace("|","/")} |')
 open(f"{D}/Реєстр_290_питань_арбітраж.md","w",encoding="utf-8").write("\n".join(md))
 md2 = ["# Остаточний реєстр 65 карток пам’яті (арбітражна експертиза 02.11.2026)", "", "| ID | Запитання | Відповідь | Статус | Зауваження | Змінено |", "|---|---|---|---|---|---|"]
-for row in rows3: md2.append(f'| {row[0]} | {row[2].replace("|","/")} | {row[4]} | {row[7]} | {row[10].replace("|","/")} | {row[11]} |')
+for row in rows3: md2.append(f'| {row[0]} | {row[2].replace("|","/")} | {row[4]} | {row[7]} | {str(row[16]).replace("|","/")} | {row[17]} |')
 open(f"{D}/Реєстр_65_карток_арбітраж.md","w",encoding="utf-8").write("\n".join(md2))
 md3 = ["# Таблиця розбіжностей між експертизами та рішення арбітражу", "", "| ID | № | Тип | Експертиза 1 | Експертиза 2 | Арбітраж | Підстава |", "|---|---|---|---|---|---|---|"]
 for row in rows2: md3.append("| " + " | ".join(str(x).replace("|","/") for x in row) + " |")
