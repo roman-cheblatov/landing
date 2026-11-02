@@ -19,34 +19,47 @@ assert lines[100].startswith("const LESSONS=") and lines[100].endswith("};"), li
 lines[99] = "const DB=" + js(db) + ";"
 lines[100] = "const LESSONS=" + js(lessons) + ";"
 html = "\n".join(lines)
-html = rep(html, "const KEY_VERSION='fable-review-v5.0-2026-11-02';", "const KEY_VERSION='arbitration-v6.0-2026-11-02';")
+html = rep(html, "const KEY_VERSION='fable-review-v5.0-2026-11-02';", "const KEY_VERSION='arbitration-v6.2-2026-11-02';")
 html = rep(html, 'const REKEYED_IDS=["01-03","01-22","01-24","03-24","04-06","04-33","07-13","09-07","07-29"];',
                  'const REKEYED_IDS=["01-03","01-22","01-24","03-24","04-06","04-33","07-13","09-07","07-29","03-09","07-06"];')
 html = rep(html, 'const REVIEW_V5_CHANGED_IDS=["01-03","07-29"]; // ключі, змінені незалежною експертизою 02.11.2026',
                  'const REVIEW_V5_CHANGED_IDS=["01-03","07-29"]; // ключі, змінені другою незалежною експертизою 02.11.2026 (v5.0)\n'
                  'const ARBITRATION_V6_CHANGED_IDS=["03-09","07-06"]; // ключі, змінені арбітражною експертизою 02.11.2026 (v6.0) відносно v5.0\n'
-                 'const AUDIT_V5_KEYS_DIFF=["01-03","07-29"]; // відмінності v6.0 від версії audit-2026-11-02-v5.0 (експертиза 1)')
+                 'const AUDIT_V5_KEYS_DIFF=["01-03","07-29"]; // відмінності v6.x від версії audit-2026-11-02-v5.0 (експертиза 1)\n'
+                 'const V62_CHANGED_IDS=["07-29"]; // v6.2: 7.29 переведено в умовний (неоцінюваний) ключ — скидається лише його статистика')
 html = rep(html, """ const changed=(state.keyVersion==='centralization-04-02-v4.0-2026-10-22')?REVIEW_V5_CHANGED_IDS
    :(state.keyVersion==='trauma-07-06-v3.8-2026-10-22')?[...REVIEW_V5_CHANGED_IDS,'04-02']
    :(state.keyVersion==='single-answer-2026-10-22')?[...REVIEW_V5_CHANGED_IDS,'07-06','04-02']
    :[...new Set([...REKEYED_IDS,'07-06','04-02'])];""",
-""" const changed=(state.keyVersion==='fable-review-v5.0-2026-11-02')?[...ARBITRATION_V6_CHANGED_IDS]
+""" const changed=(state.keyVersion==='arbitration-v6.0-2026-11-02')?[...V62_CHANGED_IDS]
+   :(state.keyVersion==='fable-review-v5.0-2026-11-02')?[...ARBITRATION_V6_CHANGED_IDS,...V62_CHANGED_IDS]
    :(state.keyVersion==='audit-2026-11-02-v5.0')?[...AUDIT_V5_KEYS_DIFF]
    :(state.keyVersion==='centralization-04-02-v4.0-2026-10-22')?[...REVIEW_V5_CHANGED_IDS,...ARBITRATION_V6_CHANGED_IDS]
    :(state.keyVersion==='trauma-07-06-v3.8-2026-10-22')?[...REVIEW_V5_CHANGED_IDS,...ARBITRATION_V6_CHANGED_IDS,'04-02']
    :(state.keyVersion==='single-answer-2026-10-22')?[...REVIEW_V5_CHANGED_IDS,...ARBITRATION_V6_CHANGED_IDS,'07-06','04-02']
    :[...new Set([...REKEYED_IDS,'07-06','04-02'])];""")
+# ---- умовний ключ 7.29: відображення без оцінювання
+html = rep(html, "if(q.correctDefinition&&!q.gradeable)sec.append(el('p','tiny muted','У великому Word немає точного варіанта відповіді. Після тренування буде наведено окреме визначення; цей пункт не впливає на бал.'));",
+                 "if(q.correctDefinition&&!q.gradeable)sec.append(el('p','tiny muted','Серед варіантів немає науково правильного визначення; відповідь не впливає на бал. Після перевірки побачиш імовірний ключ тесту та правильне визначення.'));")
+html = rep(html, " key.append(el('strong','',isKey?'✓ Правильна відповідь (навчальний ключ)':'Правильного варіанта немає'),el('div','',right?right.label:'Визначення наведено нижче'));",
+                 " const cond=Boolean(q.arb&&q.arb.conditional&&right);\n key.append(el('strong','',isKey?'✓ Правильна відповідь (навчальний ключ)':cond?'≈ Імовірний ключ тесту (умовний, не оцінюється)':'Правильного варіанта немає'),el('div','',right?right.label:'Визначення наведено нижче'));")
+html = rep(html, " if(q.correctDefinition){const d=el('div','studypiece');d.append(el('em','','Правильне визначення з Word'),el('div','',q.correctDefinition));card.append(d)}",
+                 " if(q.correctDefinition){const d=el('div','studypiece');d.append(el('em','',cond?'Науково правильне визначення (серед варіантів відсутнє)':'Правильне визначення з Word'),el('div','',q.correctDefinition));card.append(d)}")
+html = rep(html, "'Ключ: '+(right?.label||'не встановлено'),o.q.correctDefinition?'Правильне визначення з великого Word: '+o.q.correctDefinition:''",
+                 "((o.q.arb&&o.q.arb.conditional)?'Імовірний ключ тесту (умовний, не оцінюється): ':'Ключ: ')+(right?.label||'не встановлено'),o.q.correctDefinition?'Науково правильне визначення: '+o.q.correctDefinition:''")
+html = rep(html, "помилок: ${summary.bad} · без коректного варіанта: ${summary.unkeyed}", "помилок: ${summary.bad} · без оцінювання (умовний ключ): ${summary.unkeyed}")
+html = rep(html, '<option value="all">Усі 290 для тренування (усі з навчальним ключем)</option>', '<option value="all">Усі 290 для тренування (289 з навчальним ключем, 7.29 — умовний, не оцінюється)</option>')
 html = rep(html, "const keysafe=q=>q.status==='Один варіант у Word (неофіційний)';", "const keysafe=q=>Boolean(q.arb&&q.arb.pool==='safe');")
 html = rep(html, '<option value="safe">Без зафіксованих зауважень (202 запитань)</option><option value="risk">Лише спірні / проблемні (88)</option>',
                  '<option value="safe">Ключ підтверджено арбітражем (263 запитання)</option><option value="risk">Спірні, умовні, виправлені, низька впевненість (27)</option>')
 old_callout = re.search(r'<p class="callout warning">⚠ За методичкою СНУ.*?</p>', html).group(0)
 new_callout = ('<p class="callout warning">⚠ За методичкою СНУ (розділ 4, с. 8) у кожному завданні лише один правильний варіант. У тренажері одна відповідь на запитання. '
   'Для всіх 290 завдань установлено один навчальний ключ. Ключі пройшли дві незалежні експертизи та арбітражну експертизу 02.11.2026: 263 ключі підтверджено, '
-  '27 позначено як спірні, умовні, виправлені або з низькою впевненістю (змінено ключі 1.3, 3.9, 7.6; 7.29 має умовний ключ). Ключі не підтверджені кафедрою — офіційний ключ Moodle невідомий. '
+  '27 позначено як спірні, умовні, виправлені або з низькою впевненістю (змінено ключі 1.3, 3.9, 7.6; 7.29 має умовний ключ і не впливає на бал). Ключі не підтверджені кафедрою — офіційний ключ Moodle невідомий. '
   'На пробному іспиті добираються лише завдання з навчальним ключем.</p>')
 html = rep(html, old_callout, new_callout)
 old_footer = re.search(r'<div class="footer">Версія 5\.0 \(02\.11\.2026\).*?</div>', html).group(0)
-new_footer = ('<div class="footer">Версія 6.1 (02.11.2026) · Ключ № 6.0 після арбітражної експертизи (статуси уточнено після повторної перевірки 03-07 і 05-14) (дві незалежні експертизи + арбітраж: змінено 1.3, 3.9, 7.6; умовний ключ 7.29; нумерація за збірником 2026) · '
+new_footer = ('<div class="footer">Версія 6.2 (02.11.2026) · Ключ № 6.2 після арбітражної експертизи (7.29 — умовний ключ без оцінювання; статуси уточнено після повторної перевірки) (дві незалежні експертизи + арбітраж: змінено 1.3, 3.9, 7.6; умовний ключ 7.29; нумерація за збірником 2026) · '
   'Спрощений розбір помилок · Мініуроки з поясненнями й асоціаціями · Одна відповідь · перенесення попереднього прогресу та адаптивне повторення · Оригінальні тексти запитань збережено</div>')
 html = rep(html, old_footer, new_footer)
 open(f"{OUT}/index.html", "w", encoding="utf-8").write(html)
@@ -57,7 +70,7 @@ ml = m.split("\n")
 assert ml[27].startswith("const DATA=") and ml[27].endswith("];"), ml[27][:30]
 ml[27] = "const DATA=" + js(cards) + ";"
 m = "\n".join(ml)
-m = rep(m, "Картки й пояснення пройшли другу незалежну експертизу 02.11.2026 (версія 5.0).", "Картки й пояснення пройшли дві незалежні експертизи та арбітражну експертизу 02.11.2026 (версія 6.1).")
+m = rep(m, "Картки й пояснення пройшли другу незалежну експертизу 02.11.2026 (версія 5.0).", "Картки й пояснення пройшли дві незалежні експертизи та арбітражну експертизу 02.11.2026 (версія 6.2).")
 open(f"{OUT}/memory/index.html", "w", encoding="utf-8").write(m)
 
 # ---- sw.js, manifest ----

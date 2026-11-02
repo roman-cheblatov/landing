@@ -12,7 +12,9 @@ function ok(name, cond, extra='') { results.push({name, pass: !!cond, extra}); c
   // ---- A. load main trainer
   await page.goto(BASE+'/index.html', { waitUntil: 'load' });
   await page.waitForTimeout(800);
+  const byIdSafe = (id) => info.q[id];
   const info = await page.evaluate(() => ({
+    q: {'07-29': {gradeable: byId['07-29'].gradeable, answer: byId['07-29'].answer, arb: byId['07-29'].arb}},
     db: DB.length, lessons: Object.keys(LESSONS).length, keyVersion: KEY_VERSION,
     safe: DB.filter(q=>keysafe(q)).length, risk: DB.filter(q=>!keysafe(q)).length,
     gradeable: DB.filter(q=>q.gradeable&&q.answer).length,
@@ -26,16 +28,16 @@ function ok(name, cond, extra='') { results.push({name, pass: !!cond, extra}); c
   }));
   ok('DB має 290 записів', info.db===290, JSON.stringify({db:info.db, lessons:info.lessons}));
   ok('LESSONS має 290 записів', info.lessons===290);
-  ok('KEY_VERSION = arbitration-v6.0', info.keyVersion==='arbitration-v6.0-2026-11-02');
+  ok('KEY_VERSION = arbitration-v6.2', info.keyVersion==='arbitration-v6.2-2026-11-02');
   ok('Пул: 263 надійних / 27 спірних', info.safe===263 && info.risk===27, `${info.safe}/${info.risk}`);
-  ok('Усі 290 мають ключ, що існує серед варіантів', info.gradeable===290 && info.noAnswer.length===0, JSON.stringify(info.noAnswer));
+  ok('289 оцінюваних ключів + умовний 7.29; усі ключі існують серед варіантів', info.gradeable===289 && info.noAnswer.length===0 && !byIdSafe('07-29').gradeable && byIdSafe('07-29').answer==='a' && byIdSafe('07-29').arb.conditional===true, JSON.stringify({g:info.gradeable, na:info.noAnswer}));
   ok('Спірні мають warning, надійні — ні', info.warnRisk.length===0 && info.warnSafe.length===0, JSON.stringify([info.warnRisk, info.warnSafe]));
   ok('Ключі 1.3=b, 3.9=a, 7.6=g, 7.29=a', JSON.stringify(info.keys)===JSON.stringify({'01-03':'b','03-09':'a','07-06':'g','07-29':'a'}), JSON.stringify(info.keys));
   ok('Підписи фільтра оновлено', info.poolOptions.join('|').includes('263') && info.poolOptions.join('|').includes('27'), info.poolOptions.join(' | '));
   ok('Дисципліни заповнено (9+1)', info.subjects===10, String(info.subjects));
   ok('Автозбереження працює', info.storage.includes('ввімкнено'), info.storage);
   // ---- B. migration from v5.0 (Fable) and from exp1 audit
-  for (const [ver, expectReset, expectKeep] of [['fable-review-v5.0-2026-11-02', ['03-09','07-06'], ['01-03','01-01']], ['audit-2026-11-02-v5.0', ['01-03','07-29'], ['03-09','01-01']], ['centralization-04-02-v4.0-2026-10-22', ['01-03','07-29','03-09','07-06'], ['01-01']]]) {
+  for (const [ver, expectReset, expectKeep] of [['arbitration-v6.0-2026-11-02', ['07-29'], ['01-03','03-09','07-06','01-01']], ['fable-review-v5.0-2026-11-02', ['03-09','07-06','07-29'], ['01-03','01-01']], ['audit-2026-11-02-v5.0', ['01-03','07-29'], ['03-09','01-01']], ['centralization-04-02-v4.0-2026-10-22', ['01-03','07-29','03-09','07-06'], ['01-01']]]) {
     await page.evaluate((ver) => {
       const mk = () => ({attempts:3,correct:2,wrong:1,confidence:1,streak:1,recovery:0,pending:false,lastAt:Date.now(),lastSession:1,dueSession:2,dueAt:Date.now()});
       const st = {version:2, bankId:'snu-psychology-2026-290', keyVersion: ver, completed: 1, items: {'01-01':mk(),'01-03':mk(),'03-09':mk(),'07-06':mk(),'07-29':mk()}, sessions:[{at:Date.now(),score:1,total:1}], prefs:{mode:'adaptive',count:'50',timer:'yes',pool:'all',subject:'all'}};
@@ -44,7 +46,7 @@ function ok(name, cond, extra='') { results.push({name, pass: !!cond, extra}); c
     await page.reload({ waitUntil: 'load' }); await page.waitForTimeout(500);
     const st = await page.evaluate(() => ({ kv: state.keyVersion, ids: Object.keys(state.items), oldKey: (state.sessions||[]).every(s=>s.oldKey) }));
     const resetOK = expectReset.every(id=>!st.ids.includes(id)) && expectKeep.every(id=>st.ids.includes(id));
-    ok(`Міграція прогресу з «${ver}»: скинуто ${expectReset.join(',')}; збережено ${expectKeep.join(',')}`, st.kv==='arbitration-v6.0-2026-11-02' && resetOK && st.oldKey, JSON.stringify(st));
+    ok(`Міграція прогресу з «${ver}»: скинуто ${expectReset.join(',')}; збережено ${expectKeep.join(',')}`, st.kv==='arbitration-v6.2-2026-11-02' && resetOK && st.oldKey, JSON.stringify(st));
   }
   // ---- C. exam flow on risk pool
   await page.evaluate(() => localStorage.clear());
@@ -71,6 +73,18 @@ function ok(name, cond, extra='') { results.push({name, pass: !!cond, extra}); c
   await page.click('#finish'); await page.waitForTimeout(800);
   const res2 = await page.evaluate(() => ({ cards: document.querySelectorAll('#result .studycard').length, mnemo: document.querySelectorAll('#result .mnemo').length, pending: Object.values(state.items).filter(x=>x.pending).length }));
   ok('Розбір 50 помилок з мініуроками', res2.cards===50 && res2.mnemo>=40 && res2.pending===50, JSON.stringify(res2));
+  // ---- C3. умовний ключ 7.29: не оцінюється, але показує імовірний ключ і наукове визначення
+  await page.evaluate(() => localStorage.clear()); await page.reload({ waitUntil: 'load' }); await page.waitForTimeout(400);
+  await page.selectOption('#mode', 'new'); await page.selectOption('#count', '50'); await page.selectOption('#pool', 'risk'); await page.selectOption('#timer', 'no');
+  await page.click('#start'); await page.waitForTimeout(600);
+  const has729 = await page.evaluate(() => test.some(q=>q.id==='07-29') && test.length===27);
+  ok('Тренування на пулі «спірні» містить усі 27 питань, у т. ч. 7.29', has729);
+  const hint = await page.evaluate(() => [...document.querySelectorAll('#questions .qsection')].some(s=>s.textContent.includes('не впливає на бал')));
+  ok('Під час тренування 7.29 має підказку «не впливає на бал»', hint);
+  await page.evaluate(() => { test.forEach((q)=>{ const radios=[...document.querySelectorAll('#questions input[type=radio]')].filter(r=>r.name && r.name.includes(q.id)); const pick=radios.find(r=>r.value===q.answer)||radios[0]; pick.click(); }); });
+  await page.click('#finish'); await page.waitForTimeout(800);
+  const c3 = await page.evaluate(() => { const s=state.sessions[0]; const cards=[...document.querySelectorAll('#result .studycard')]; const c=cards.find(x=>x.textContent.includes('Афект (лат. affectus)')); return { good:s.good, bad:s.bad, unkeyed:s.unkeyed, total:s.good+s.bad, condLabel: c?c.textContent.includes('Імовірний ключ тесту (умовний, не оцінюється)'):null, sciDef: c?c.textContent.includes('Науково правильне визначення'):null, scoreText: document.querySelector('#result .score').textContent, item: state.items['07-29'] }; });
+  ok('7.29 не входить до балу (26 оцінюваних, 1 без оцінювання), картка показує умовний ключ і наукове визначення', c3.total===26 && c3.unkeyed===1 && c3.condLabel===true && c3.sciDef===true && c3.scoreText.startsWith('26 / 26'), JSON.stringify(c3));
   // export/import
   const exported = await page.evaluate(() => JSON.stringify({exportedAt: Date.now(), bankId: BANK_ID, progress: state}));
   ok('Експорт прогресу (структура) доступний', exported.length>100);
