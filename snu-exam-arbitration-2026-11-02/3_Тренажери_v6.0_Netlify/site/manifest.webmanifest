@@ -1,0 +1,11 @@
+{
+  "name": "Держіспит СНУ — Психологія 2026",
+  "short_name": "Держіспит СНУ",
+  "description": "Навчальні тренажери для підготовки до атестаційного іспиту з психології",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f1f5f5",
+  "theme_color": "#173d52",
+  "lang": "uk"
+}
