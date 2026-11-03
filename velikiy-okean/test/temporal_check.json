@@ -1,0 +1,13 @@
+{
+ "frames": 699,
+ "luma_min": 0.2,
+ "luma_max": 115.6,
+ "median_change": 1.0,
+ "max_change_noncut": 2.69,
+ "change_at_cuts": {
+  "174": 27.34,
+  "355": 53.29,
+  "552": 54.84
+ },
+ "suspicious_jumps": []
+}

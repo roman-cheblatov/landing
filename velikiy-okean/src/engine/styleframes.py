@@ -11,7 +11,7 @@ R = Renderer(1920, 1080, 1.0)
 hero_stand = Hero([dict(kind='stand', t0=-100, pos=(0.0, 3.5), yaw=-8.0, hands='pockets')], look=[(0, -3, -2)])
 frames = [
     ('D2_pearl_shot29', PEARL, PEARL_POST, (1.6, 1.45, -3.2), (-0.5, 1.2, 12.0), 50.0, 3.0, hero_stand, 200.0),
-    ('D4_gold_shot35', GOLD, GOLD_POST, (4.0, 3.2, 8.0), (-3.0, 0.2, 60.0), 26.0, 40.0, None, 245.0),
+    ('D4_gold_shot35', GOLD, GOLD_POST, (4.0, 3.4, 42.0), (-3.5, 0.3, 100.0), 26.0, 60.0, None, 245.0),
     ('D4_gold_shot38', GOLD, GOLD_POST, (1.3, 1.25, -1.5), (-0.6, 1.0, 14.0), 50.0, 5.2, hero_stand, 266.0),
 ]
 for name, W, P0, pos, tgt, focal, focus, hero, t in frames:

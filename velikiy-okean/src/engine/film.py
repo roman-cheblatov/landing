@@ -76,8 +76,9 @@ def shot02(t, u):
 def shot03(t, u):
     """MS from behind: the voice of the Ocean enters, the clouds part, the moon path lights up; slow push-in."""
     U, P = base_night(t)
-    pos = lerp((1.75, 1.58, -8.1), (1.05, 1.5, -5.7), ease_io(u, 1.15))
-    tgt = lerp((-0.9, 1.32, 8.0), (-1.1, 1.36, 8.0), ease_io(u, 1.2))
+    # the moon path lies left of the figure (hero on the right third, light on the left third)
+    pos = lerp((0.25, 1.58, -8.1), (0.15, 1.5, -5.7), ease_io(u, 1.15))
+    tgt = lerp((-1.4, 1.32, 8.0), (-1.6, 1.36, 8.0), ease_io(u, 1.2))
     hp = HERO_OPENING.state(t)['uJ'][3]
     focus = float(np.linalg.norm(np.asarray(hp) - np.asarray(pos)))
     cam(U, P, pos, tgt, 50.0, focus, fstop=2.2, t=t, seed=3)

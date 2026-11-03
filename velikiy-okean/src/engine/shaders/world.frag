@@ -564,9 +564,9 @@ vec3 sandShade(vec3 p, vec3 rd, float t, out float wetOut) {
         r.y = abs(r.y);
         float fr = fresnelSchlick(saturate(dot(-rd, nw)), 0.02) * wet;
         vec3 refl = skyRadiance(r, false);
-        float rough = mix(0.16, 0.06, glisten);
+        float rough = mix(0.26, 0.13, glisten);
         vec3 hv = normalize(uMoonDir - rd);
-        refl += gMoon * uMoonDisk * 0.00022 * ggxD(saturate(dot(nw, hv)), rough) * gMoonVis;
+        refl += gMoon * uMoonDisk * 0.0001 * ggxD(saturate(dot(nw, hv)), rough) * gMoonVis;
         vec3 hvs = normalize(uSunDir - rd);
         refl += uSunCol * uSunDisk * 0.0012 * ggxD(saturate(dot(nw, hvs)), rough);
         // hero reflection
@@ -599,6 +599,12 @@ vec3 waterShade(vec3 p, vec3 rd, float t, out float foamOut) {
     vec4 a = n2v(uvA), b = n2v(uvB);
     vec3 dn = vec3(a.g + 0.5 * b.g, 0.0, a.a + 0.5 * b.a);
     n = normalize(n + dn * 0.042 * lod * (1.0 - 0.7 * sheet));
+    if (sheet > 0.5) {
+        // a thin film over sand follows the sand micro-relief: broken, dimmer highlight
+        vec4 sd = n2v(p.xz * vec2(0.9, 1.6));
+        vec4 sd2 = n2v(p.xz * vec2(3.7, 4.9) + 0.21);
+        n = normalize(n + (vec3(sd.a, 0.0, sd.g) * 0.07 + vec3(sd2.r, 0.0, sd2.b) * 0.05) * lod);
+    }
     vec3 v = -rd;
     float nv = saturate(dot(n, v));
     float fr = fresnelSchlick(nv, 0.02);
@@ -606,10 +612,11 @@ vec3 waterShade(vec3 p, vec3 rd, float t, out float foamOut) {
     if (r.y < 0.0) r = normalize(vec3(r.x, -r.y * 0.3 + 0.002, r.z));
     vec3 refl = skyRadiance(r, false);
     // unresolved slope variance grows with distance → moon/sun glitter path widens into a smooth glade
-    float rough = 0.018 + 0.07 * (1.0 - lod) + 0.0006 * t;
+    float rough = 0.025 + 0.07 * (1.0 - lod) + 0.0006 * t;
+    if (sheet > 0.5) rough = max(rough, 0.11);
     vec3 hv = normalize(uMoonDir + v);
     float spec = ggxD(saturate(dot(n, hv)), rough) * fr / max(4.0 * nv * saturate(dot(n, uMoonDir)) + 0.05, 0.05);
-    refl += gMoon * uMoonDisk * 0.0009 * spec * saturate(dot(n, uMoonDir) * 4.0) * gMoonVis;
+    refl += gMoon * uMoonDisk * 0.00055 * spec * saturate(dot(n, uMoonDir) * 4.0) * gMoonVis * (1.0 - 0.55 * sheet);
     vec3 hvs = normalize(uSunDir + v);
     float specS = ggxD(saturate(dot(n, hvs)), rough) * fr / max(4.0 * nv * saturate(dot(n, uSunDir)) + 0.05, 0.05);
     refl += uSunCol * uSunDisk * 0.0016 * specS * saturate(dot(n, uSunDir) * 4.0);

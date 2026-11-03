@@ -1,0 +1,26 @@
+{
+ "video": {
+  "codec": "h264",
+  "w": 1920,
+  "h": 1080,
+  "fps": "24/1",
+  "pix_fmt": "yuv420p",
+  "start": 0.0,
+  "duration": 29.125,
+  "frames": 699
+ },
+ "audio": {
+  "codec": "mp3",
+  "sr": 48000,
+  "ch": 2,
+  "start": 0.0,
+  "duration": 29.136,
+  "bit_rate": "174986"
+ },
+ "expected_frames": 699,
+ "black_segments": [],
+ "audio_lag_samples": 0,
+ "audio_lag_ms": 0.0,
+ "audio_identical_samples": true,
+ "audio_max_abs_diff": 0
+}

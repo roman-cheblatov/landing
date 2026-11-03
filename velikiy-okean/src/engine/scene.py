@@ -150,7 +150,7 @@ def _look(base, **kw):
 PEARL = _look(NIGHT,   # D2: sun just below the horizon, mist glowing from within
     uMoonCol=np.array([0.05, 0.055, 0.065], np.float32), uMoonDisk=0.0, uStars=0.0,
     uSunDir=dir_from_angles(-12.0, -1.5), uSunCol=np.array([0.55, 0.40, 0.33], np.float32), uSunDisk=0.0,
-    uZenith=np.array([0.075, 0.095, 0.14], np.float32), uHorizon=np.array([0.36, 0.30, 0.30], np.float32),
+    uZenith=np.array([0.075, 0.095, 0.14], np.float32), uHorizon=np.array([0.36, 0.32, 0.30], np.float32),
     uAmbient=np.array([0.16, 0.16, 0.18], np.float32), uCloudLit=np.array([0.55, 0.42, 0.40], np.float32),
     uCloudCover=0.5, uFogCol=np.array([1.0, 0.95, 0.93], np.float32), uFogDens=0.011, uGroundMist=0.07, uFogG=0.6,
     uDeepCol=np.array([0.03, 0.065, 0.075], np.float32))
