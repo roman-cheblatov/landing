@@ -1,0 +1,11 @@
+# Media is NOT committed: the repository is public and the song is unreleased material.
+media/
+work/
+out/
+test/*.mp4
+*.mp3
+*.mp4
+*.wav
+*.npy
+*.npz
+__pycache__/
