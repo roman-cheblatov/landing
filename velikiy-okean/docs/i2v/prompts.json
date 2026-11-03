@@ -1,0 +1,1536 @@
+{
+ "price_usd_per_second": {
+  "kling4": 0.188,
+  "kling4_list": 0.235,
+  "kling3pro": 0.12,
+  "gen45": 0.12
+ },
+ "image_price_usd": 0.08,
+ "budget": {
+  "video_usd": 220.73,
+  "video_usd_list": 262.12,
+  "images": 558,
+  "images_usd": 48.24,
+  "generated_seconds": 1341,
+  "net_seconds": 337.54
+ },
+ "shots": [
+  {
+   "shot": "01",
+   "title": "Океан дышит",
+   "start_s": 0.0,
+   "end_s": 7.25,
+   "start_frame": 0,
+   "end_frame": 173,
+   "frames": 174,
+   "dur_s": 7.25,
+   "light": "N1",
+   "model": "kling3pro",
+   "gen_s": 8,
+   "takes": 3,
+   "refs": [
+    "ocean_n1"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Extreme wide shot low over the open night sea, camera 2.5 m above the water looking toward the horizon; the moon hidden in a cloud bank, its halo glowing; long slow swells, low mist; nobody in frame",
+     "prompt": "Extreme wide shot low over the open night sea, camera 2.5 m above the water looking toward the horizon; the moon hidden in a cloud bank, its halo glowing; long slow swells, low mist; nobody in frame. Open sea far from shore, long calm swells, no land visible. Night, the full moon hidden behind a bank of thin stratus, only its soft halo glowing through; cold blue-grey sea mist hanging low; lead-coloured sea with long slow swells; horizon dissolving into haze; deep blue shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow steady glide forward over the water toward the veiled moon, slight descent, a barely perceptible roll. Long swells rise and fall slowly, mist drifts left to right, the moon halo breathes softly behind thin clouds. No people. Calm, contemplative. Night, the full moon hidden behind a bank of thin stratus, only its soft halo glowing through; cold blue-grey sea mist hanging low; lead-coloured sea with long slow swells; horizon dissolving into haze; deep blue shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Fade from black 0–4.2 s is done in the edit, not generated.",
+   "video_cost": 2.88,
+   "video_cost_list": 2.88,
+   "key_images": 6
+  },
+  {
+   "shot": "02",
+   "title": "Приход",
+   "start_s": 7.25,
+   "end_s": 14.792,
+   "start_frame": 174,
+   "end_frame": 354,
+   "frames": 181,
+   "dur_s": 7.542,
+   "light": "N1",
+   "model": "kling4",
+   "gen_s": 9,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "hero_walk",
+    "hero_profile",
+    "beach_night",
+    "ocean_n1"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot on the dark beach at night, 35 mm, camera 1.2 m high; the man small in frame on the left, walking from the dunes toward the waterline, hands in his coat pockets; mirror-wet sand reflects the moon halo",
+     "prompt": "Wide shot on the dark beach at night, 35 mm, camera 1.2 m high; the man small in frame on the left, walking from the dunes toward the waterline, hands in his coat pockets; mirror-wet sand reflects the moon halo. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, the full moon hidden behind a bank of thin stratus, only its soft halo glowing through; cold blue-grey sea mist hanging low; lead-coloured sea with long slow swells; horizon dissolving into haze; deep blue shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Same framing slightly tracked left: the man now standing still at the edge of the swash, facing the sea",
+     "prompt": "Same framing slightly tracked left: the man now standing still at the edge of the swash, facing the sea. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, the full moon hidden behind a bank of thin stratus, only its soft halo glowing through; cold blue-grey sea mist hanging low; lead-coloured sea with long slow swells; horizon dissolving into haze; deep blue shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Lateral dolly from right to left with foreground sand parallax. the man in the charcoal wool overcoat walks slowly and heavily toward the waterline with hands in his coat pockets, coat hem swaying with each step, wet sand darkening under his boots; he slows down and stops at the edge of the swash. Thin foam slides up the sand and back. Mist drifts. Night, the full moon hidden behind a bank of thin stratus, only its soft halo glowing through; cold blue-grey sea mist hanging low; lead-coloured sea with long slow swells; horizon dissolving into haze; deep blue shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "The stop must land just before the cut at 14.79 s.",
+   "video_cost": 6.77,
+   "video_cost_list": 8.46,
+   "key_images": 12
+  },
+  {
+   "shot": "03",
+   "title": "Голос Океана",
+   "start_s": 14.792,
+   "end_s": 23.0,
+   "start_frame": 355,
+   "end_frame": 551,
+   "frames": 197,
+   "dur_s": 8.208,
+   "light": "N1→N2",
+   "model": "kling4",
+   "gen_s": 9,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "hero_hair_back",
+    "beach_night",
+    "ocean_n2"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Medium shot from behind, 50 mm, the man standing on the right third at the waterline facing the night sea; moon still veiled, sea dark lead-grey, faint glow behind clouds on the left",
+     "prompt": "Medium shot from behind, 50 mm, the man standing on the right third at the waterline facing the night sea; moon still veiled, sea dark lead-grey, faint glow behind clouds on the left. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, the full moon hidden behind a bank of thin stratus, only its soft halo glowing through; cold blue-grey sea mist hanging low; lead-coloured sea with long slow swells; horizon dissolving into haze; deep blue shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Same composition 2 m closer: the clouds have parted, the moon is out of frame top-left and a long glittering silver moon path lies on the sea on the left third; his head slightly raised toward it, rim light on collar and hair",
+     "prompt": "Same composition 2 m closer: the clouds have parted, the moon is out of frame top-left and a long glittering silver moon path lies on the sea on the left third; his head slightly raised toward it, rim light on collar and hair. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Very slow push-in toward the man in the charcoal wool overcoat from behind. Gradually the clouds part and the moonlight comes through: a silver moon path ignites across the sea on the left and brightens, the mist lights up; he slowly lifts his head toward the light. His coat moves gently in the wind, fine hair at the nape stirs. Real water glitter, no glow effects. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Light change must peak around 16.0–18.5 s (full entrance of the voice); chosen take may be speed-ramped ±8 %.",
+   "video_cost": 6.77,
+   "video_cost_list": 8.46,
+   "key_images": 12
+  },
+  {
+   "shot": "04",
+   "title": "Масштаб",
+   "start_s": 23.0,
+   "end_s": 29.125,
+   "start_frame": 552,
+   "end_frame": 698,
+   "frames": 147,
+   "dur_s": 6.125,
+   "light": "N2",
+   "model": "kling4",
+   "gen_s": 8,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "beach_night",
+    "ocean_n2",
+    "swash_foam"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "High wide shot from behind, camera 2 m high, the man small at the waterline, long misty shoreline curving away, moon path ahead",
+     "prompt": "High wide shot from behind, camera 2 m high, the man small at the waterline, long misty shoreline curving away, moon path ahead. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Camera now 6 m high and tilted toward the sea: the long shoreline, lace of foam around his boots, the moon path",
+     "prompt": "Camera now 6 m high and tilted toward the sea: the long shoreline, lace of foam around his boots, the moon path. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Smooth crane up from 2 m to 6 m while tilting down toward the sea. A thin sheet of surf runs up the mirror-wet sand, foam lace flows around the man's boots and slides back; he stands still, coat hem moving in the wind. Long misty shoreline, glittering moon path. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Run-up peak ≈ 26.4 s; backwash with the end of the vocal phrase at 29.07 s.",
+   "video_cost": 6.02,
+   "video_cost_list": 7.52,
+   "key_images": 12
+  },
+  {
+   "shot": "05",
+   "title": "Отражение",
+   "start_s": 29.125,
+   "end_s": 38.208,
+   "start_frame": 699,
+   "end_frame": 916,
+   "frames": 218,
+   "dur_s": 9.083,
+   "light": "N2",
+   "model": "kling3pro",
+   "gen_s": 10,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "swash_foam",
+    "ocean_n2"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Close-up low over mirror-wet sand at night: in the thin film of water the upside-down reflection of the man and the moon path; his boots at the top edge of frame, out of focus",
+     "prompt": "Close-up low over mirror-wet sand at night: in the thin film of water the upside-down reflection of the man and the moon path; his boots at the top edge of frame, out of focus. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow sideways drift a few centimetres above the sand. A thin sheet of water slides in and gently erases the reflection into trembling silver fragments, then drains away leaving glistening sand. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 4.8,
+   "video_cost_list": 4.8,
+   "key_images": 6
+  },
+  {
+   "shot": "06",
+   "title": "Руки",
+   "start_s": 38.208,
+   "end_s": 43.25,
+   "start_frame": 917,
+   "end_frame": 1037,
+   "frames": 121,
+   "dur_s": 5.042,
+   "light": "N2",
+   "model": "kling4",
+   "gen_s": 6,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "hero_profile",
+    "hero_hands",
+    "ocean_n2"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Medium close-up 3/4 from behind, 65 mm, moonlit: his shoulders, collar and the back of his head; hands in coat pockets",
+     "prompt": "Medium close-up 3/4 from behind, 65 mm, moonlit: his shoulders, collar and the back of his head; hands in coat pockets. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static camera with a barely perceptible float. the man in the charcoal wool overcoat slowly takes his hands out of the coat pockets and lets them hang open by his sides; he exhales and his breath turns to vapour that drifts and dissolves into the sea mist. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Breath vapour must stay subtle and real (cold night).",
+   "video_cost": 4.51,
+   "video_cost_list": 5.64,
+   "key_images": 6
+  },
+  {
+   "shot": "07",
+   "title": "«Твои капли — сонмы живых существ»",
+   "start_s": 43.25,
+   "end_s": 48.625,
+   "start_frame": 1038,
+   "end_frame": 1166,
+   "frames": 129,
+   "dur_s": 5.375,
+   "light": "N2",
+   "model": "kling3pro",
+   "gen_s": 6,
+   "takes": 3,
+   "refs": [
+    "ocean_n2"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Macro photograph at night: droplets of sea spray suspended in moonlight above dark water, each droplet refracting the moon; in the water below a few faint blue-green specks of natural bioluminescent plankton; very shallow depth of field",
+     "prompt": "Macro photograph at night: droplets of sea spray suspended in moonlight above dark water, each droplet refracting the moon; in the water below a few faint blue-green specks of natural bioluminescent plankton; very shallow depth of field. Open sea far from shore, long calm swells, no land visible. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow macro slider movement through the suspended droplets in slow motion; droplets drift and fall, a few tiny bioluminescent specks flicker faintly in the dark water below. Natural, restrained, no particles effect. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Keep bioluminescence documentary-real (sparse, dim).",
+   "video_cost": 2.16,
+   "video_cost_list": 2.16,
+   "key_images": 6
+  },
+  {
+   "shot": "08",
+   "title": "«Твои волны — длиной в миллионы лет»",
+   "start_s": 48.625,
+   "end_s": 55.125,
+   "start_frame": 1167,
+   "end_frame": 1322,
+   "frames": 156,
+   "dur_s": 6.5,
+   "light": "N2",
+   "model": "kling3pro",
+   "gen_s": 7,
+   "takes": 3,
+   "refs": [
+    "ocean_n2"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Extreme wide shot over the open sea at night, long swell lines marching toward land under a moonlit sky with streaked clouds",
+     "prompt": "Extreme wide shot over the open sea at night, long swell lines marching toward land under a moonlit sky with streaked clouds. Open sea far from shore, long calm swells, no land visible. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Very slow rise over the sea. The long swells move in slow motion while the clouds above race in time-lapse — two scales of time at once. Silver moonlight on the swell backs. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "If the model refuses mixed time scales: generate swell plate (slow) and sky plate (time-lapse) separately and composite.",
+   "video_cost": 2.52,
+   "video_cost_list": 2.52,
+   "key_images": 6
+  },
+  {
+   "shot": "09",
+   "title": "«Нет ничего, кроме Тебя… что бы ни было Тобой»",
+   "start_s": 55.125,
+   "end_s": 63.5,
+   "start_frame": 1323,
+   "end_frame": 1523,
+   "frames": 201,
+   "dur_s": 8.375,
+   "light": "N2",
+   "model": "kling4",
+   "gen_s": 9,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "hero_profile",
+    "beach_night",
+    "ocean_n2",
+    "aerial_shore"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Top-down aerial 60 m above the sea at night: only water edge to edge and a tiny figure standing on the line of white foam",
+     "prompt": "Top-down aerial 60 m above the sea at night: only water edge to edge and a tiny figure standing on the line of white foam. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "middle",
+     "description": "Top-down aerial 12 m above: the man at the foam line seen from directly above, his long shadow from the moon",
+     "prompt": "Top-down aerial 12 m above: the man at the foam line seen from directly above, his long shadow from the moon. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Medium close-up in profile at head height: the man's breath vapour drifting into the sea mist, moonlit rim on his profile",
+     "prompt": "Medium close-up in profile at head height: the man's breath vapour drifting into the sea mist, moonlit rim on his profile. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Continuous vertical descent from high above the sea down to the man, ending at head height in profile; his breath turns to vapour and merges with the drifting sea mist. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Complex move. Fallback: two cuts at 59.35 s (aerial descent | profile with breath).",
+   "video_cost": 6.77,
+   "video_cost_list": 8.46,
+   "key_images": 18
+  },
+  {
+   "shot": "10",
+   "title": "Путь",
+   "start_s": 63.5,
+   "end_s": 70.583,
+   "start_frame": 1524,
+   "end_frame": 1693,
+   "frames": 170,
+   "dur_s": 7.083,
+   "light": "N2",
+   "model": "kling4",
+   "gen_s": 8,
+   "takes": 4,
+   "refs": [
+    "hero_walk",
+    "hero_profile",
+    "beach_night",
+    "ocean_n2"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide tracking shot parallel to the waterline at night, the man walking along the edge of the surf, sea on the right",
+     "prompt": "Wide tracking shot parallel to the waterline at night, the man walking along the edge of the surf, sea on the right. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Camera tracks alongside at walking pace. the man in the charcoal wool overcoat walks along the waterline; a thin wave runs up behind him and erases his footprints. Natural gait, coat swinging, wet sand shining. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 6.02,
+   "video_cost_list": 7.52,
+   "key_images": 6
+  },
+  {
+   "shot": "11",
+   "title": "«Прими меня… позволь на миг с тобой соприкоснуться»",
+   "start_s": 70.583,
+   "end_s": 82.25,
+   "start_frame": 1694,
+   "end_frame": 1973,
+   "frames": 280,
+   "dur_s": 11.667,
+   "light": "N2",
+   "model": "kling4",
+   "gen_s": 12,
+   "takes": 4,
+   "refs": [
+    "hero_profile",
+    "hero_back",
+    "hero_hands",
+    "beach_night",
+    "ocean_n2"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Medium shot in profile, 50 mm: the man standing at the waterline turning toward the sea",
+     "prompt": "Medium shot in profile, 50 mm: the man standing at the waterline turning toward the sea. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Low medium close-up: he has crouched at the edge of the swash, right hand reaching toward the water surface",
+     "prompt": "Low medium close-up: he has crouched at the edge of the swash, right hand reaching toward the water surface. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "The camera follows and lowers with him. the man in the charcoal wool overcoat turns to face the sea, steps into the thin swash and slowly crouches, reaching his bare right hand toward the water. Coat folds bunch naturally at the knees, hem touches the wet sand. Unhurried, reverent. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 9.02,
+   "video_cost_list": 11.28,
+   "key_images": 12
+  },
+  {
+   "shot": "12",
+   "title": "Касание",
+   "start_s": 82.25,
+   "end_s": 86.583,
+   "start_frame": 1974,
+   "end_frame": 2077,
+   "frames": 104,
+   "dur_s": 4.333,
+   "light": "N2",
+   "model": "kling3pro",
+   "gen_s": 5,
+   "takes": 4,
+   "refs": [
+    "hero_hands",
+    "ocean_n2"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Extreme close-up from above: a man's fingertips about to touch the moonlit water surface, wet sand under a thin layer of water",
+     "prompt": "Extreme close-up from above: a man's fingertips about to touch the moonlit water surface, wet sand under a thin layer of water. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "The fingertips touch the water; clean concentric ripples spread outward and, beneath the surface around the hand, a soft faint cold glow of natural bioluminescence wakes and fades. Slight slow motion. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "The \"answer\" of the Ocean — keep it dim and natural.",
+   "video_cost": 2.4,
+   "video_cost_list": 2.4,
+   "key_images": 6
+  },
+  {
+   "shot": "13",
+   "title": "«Пусть заберёт меня твоя волна»",
+   "start_s": 86.583,
+   "end_s": 92.917,
+   "start_frame": 2078,
+   "end_frame": 2229,
+   "frames": 152,
+   "dur_s": 6.333,
+   "light": "N2",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "hero_hands",
+    "swash_foam",
+    "ocean_n2"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot from behind: the man crouched at the waterline with his hand in the water, a larger sheet of surf approaching",
+     "prompt": "Wide shot from behind: the man crouched at the waterline with his hand in the water, a larger sheet of surf approaching. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow pull-back. A larger run-up of surf washes over the man's hand and boots; he does not pull back. Faint natural bioluminescent ripples travel outward from his hand along the moon path. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 6
+  },
+  {
+   "shot": "14",
+   "title": "Ответ",
+   "start_s": 92.917,
+   "end_s": 98.5,
+   "start_frame": 2230,
+   "end_frame": 2363,
+   "frames": 134,
+   "dur_s": 5.583,
+   "light": "N2",
+   "model": "kling3pro",
+   "gen_s": 6,
+   "takes": 3,
+   "refs": [
+    "ocean_n2",
+    "aerial_shore"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Aerial view rising over the moonlit sea: faint concentric rings of pale light spreading through the water from a tiny figure at the shore",
+     "prompt": "Aerial view rising over the moonlit sea: faint concentric rings of pale light spreading through the water from a tiny figure at the shore. Open sea far from shore, long calm swells, no land visible. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Camera rises and drifts away into the sky. Wide concentric rings of very faint natural light spread across the moonlit sea and pulse slowly like breathing. Night, full moon low over the sea about 13 degrees high, cold silver moonlight, a long glittering moon path on the water, backlit mist, silver rim light on wet surfaces, deep blue-black shadows. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Female answer 92.92 s — the rings are the voice.",
+   "video_cost": 2.16,
+   "video_cost_list": 2.16,
+   "key_images": 6
+  },
+  {
+   "shot": "15",
+   "title": "«Когда нет сил, когда вокруг обман»",
+   "start_s": 98.5,
+   "end_s": 104.292,
+   "start_frame": 2364,
+   "end_frame": 2502,
+   "frames": 139,
+   "dur_s": 5.792,
+   "light": "N3",
+   "model": "kling4",
+   "gen_s": 6,
+   "takes": 4,
+   "refs": [
+    "hero_walk",
+    "hero_back",
+    "basalt_night"
+   ],
+   "location": "BASALT",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot on a black basalt shore at night in wind, the man walking heavily between wet boulders, head down, hands in pockets",
+     "prompt": "Wide shot on a black basalt shore at night in wind, the man walking heavily between wet boulders, head down, hands in pockets. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A rugged stretch of the same coast with black wet basalt boulders and ledges, cracks filled with seawater, waves bursting white against the rocks. Night, wind, ragged clouds racing across the moon so the light flickers with cloud shadows, black wet basalt, steel-blue palette, spray and wind-driven mist, no warmth. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Camera follows with heavy, steady movement. the man in the charcoal wool overcoat walks against the wind between black boulders, coat flapping, spray drifting, cloud shadows racing over the rocks. Night, wind, ragged clouds racing across the moon so the light flickers with cloud shadows, black wet basalt, steel-blue palette, spray and wind-driven mist, no warmth. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 4.51,
+   "video_cost_list": 5.64,
+   "key_images": 6
+  },
+  {
+   "shot": "16",
+   "title": "«…и сердце разрывается от боли»",
+   "start_s": 104.292,
+   "end_s": 111.208,
+   "start_frame": 2503,
+   "end_frame": 2668,
+   "frames": 166,
+   "dur_s": 6.917,
+   "light": "N3",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "hero_profile",
+    "hero_back",
+    "basalt_night"
+   ],
+   "location": "BASALT",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Medium close-up from the side: the man leaning with one hand against a wet basalt rock, wind in his coat; in the foreground cracks in the wet stone with seawater seeping; behind him a wave about to burst on the rocks",
+     "prompt": "Medium close-up from the side: the man leaning with one hand against a wet basalt rock, wind in his coat; in the foreground cracks in the wet stone with seawater seeping; behind him a wave about to burst on the rocks. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A rugged stretch of the same coast with black wet basalt boulders and ledges, cracks filled with seawater, waves bursting white against the rocks. Night, wind, ragged clouds racing across the moon so the light flickers with cloud shadows, black wet basalt, steel-blue palette, spray and wind-driven mist, no warmth. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static camera. Wind whips the coat; behind him a wave bursts against the rocks in slow motion, white spray hangs in the air; seawater trickles through the cracks in the foreground. He breathes heavily, eyes closed. Night, wind, ragged clouds racing across the moon so the light flickers with cloud shadows, black wet basalt, steel-blue palette, spray and wind-driven mist, no warmth. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 6
+  },
+  {
+   "shot": "17",
+   "title": "«…не рад свободной воле — веди меня»",
+   "start_s": 111.208,
+   "end_s": 121.125,
+   "start_frame": 2669,
+   "end_frame": 2906,
+   "frames": 238,
+   "dur_s": 9.917,
+   "light": "N3→N4",
+   "model": "kling4",
+   "gen_s": 10,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "basalt_night",
+    "ocean_n4"
+   ],
+   "location": "BASALT",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Top-down view: the man standing motionless among black boulders as the tide rushes around them",
+     "prompt": "Top-down view: the man standing motionless among black boulders as the tide rushes around them. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A rugged stretch of the same coast with black wet basalt boulders and ledges, cracks filled with seawater, waves bursting white against the rocks. Night, wind, ragged clouds racing across the moon so the light flickers with cloud shadows, black wet basalt, steel-blue palette, spray and wind-driven mist, no warmth. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Medium shot from behind and slightly below: he lifts his head; above the sea the clouds part and a moon path lays on the water",
+     "prompt": "Medium shot from behind and slightly below: he lifts his head; above the sea the clouds part and a moon path lays on the water. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A rugged stretch of the same coast with black wet basalt boulders and ledges, cracks filled with seawater, waves bursting white against the rocks. Night, a clearing opens in the clouds above the sea, a path of moonlight lays down on the water, deep blue and silver. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow rotating top-down view, then a crane down to him. The tide rushes around the boulders; as he lifts his head the clouds part over the sea and a path of moonlight lays down on the water toward him. Night, a clearing opens in the clouds above the sea, a path of moonlight lays down on the water, deep blue and silver. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Clouds must part on «веди меня» (115.95 s).",
+   "video_cost": 7.52,
+   "video_cost_list": 9.4,
+   "key_images": 12
+  },
+  {
+   "shot": "18",
+   "title": "Рефрен: «Прими меня»",
+   "start_s": 121.125,
+   "end_s": 127.5,
+   "start_frame": 2907,
+   "end_frame": 3059,
+   "frames": 153,
+   "dur_s": 6.375,
+   "light": "N4",
+   "model": "kling3pro",
+   "gen_s": 7,
+   "takes": 3,
+   "refs": [
+    "ocean_n4",
+    "aerial_shore"
+   ],
+   "location": "BASALT",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot of the man as a small figure on a rock promontory facing the vast breathing sea at night",
+     "prompt": "Wide shot of the man as a small figure on a rock promontory facing the vast breathing sea at night. A rugged stretch of the same coast with black wet basalt boulders and ledges, cracks filled with seawater, waves bursting white against the rocks. Night, a clearing opens in the clouds above the sea, a path of moonlight lays down on the water, deep blue and silver. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Camera pulls back and rises, revealing the vast sea; long swells rise and fall slowly like breathing. Night, a clearing opens in the clouds above the sea, a path of moonlight lays down on the water, deep blue and silver. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 2.52,
+   "video_cost_list": 2.52,
+   "key_images": 6
+  },
+  {
+   "shot": "19",
+   "title": "Рефрен: «Веди меня»",
+   "start_s": 127.5,
+   "end_s": 137.375,
+   "start_frame": 3060,
+   "end_frame": 3296,
+   "frames": 237,
+   "dur_s": 9.875,
+   "light": "N4",
+   "model": "kling3pro",
+   "gen_s": 10,
+   "takes": 4,
+   "refs": [
+    "ocean_n4",
+    "hero_back"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Low shot from the water surface looking back to the shore: the man standing small at the waterline, moon path between camera and him",
+     "prompt": "Low shot from the water surface looking back to the shore: the man standing small at the waterline, moon path between camera and him. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Night, a clearing opens in the clouds above the sea, a path of moonlight lays down on the water, deep blue and silver. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "The camera floats on the sea surface, rising and falling with the swell, looking at the man on the shore; water occasionally laps across the lower frame. Night, a clearing opens in the clouds above the sea, a path of moonlight lays down on the water, deep blue and silver. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Ends with a 1.5 s dissolve to shot 20 — generate with handles.",
+   "video_cost": 4.8,
+   "video_cost_list": 4.8,
+   "key_images": 6
+  },
+  {
+   "shot": "20",
+   "title": "«Позволь на миг единым целым стать»",
+   "start_s": 137.375,
+   "end_s": 142.75,
+   "start_frame": 3297,
+   "end_frame": 3425,
+   "frames": 129,
+   "dur_s": 5.375,
+   "light": "D0",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "hero_walk",
+    "hero_back",
+    "beach_predawn"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot at pre-dawn blue hour: the man walking back on the sandy shore through milky sea fog",
+     "prompt": "Wide shot at pre-dawn blue hour: the man walking back on the sandy shore through milky sea fog. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Pre-dawn blue hour, the moon low and pale, the eastern sky turning milky steel-blue, dense milky sea fog that erases the horizon, soft shadowless light. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow lateral dolly. the man in the charcoal wool overcoat walks along the shore through dense milky fog; the light is soft and blue; the moon sinks pale in the haze. Pre-dawn blue hour, the moon low and pale, the eastern sky turning milky steel-blue, dense milky sea fog that erases the horizon, soft shadowless light. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Act II. Dissolve in from shot 19.",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 6
+  },
+  {
+   "shot": "21",
+   "title": "«…из капель нежности, добра и света»",
+   "start_s": 142.75,
+   "end_s": 149.5,
+   "start_frame": 3426,
+   "end_frame": 3587,
+   "frames": 162,
+   "dur_s": 6.75,
+   "light": "D0",
+   "model": "kling3pro",
+   "gen_s": 7,
+   "takes": 3,
+   "refs": [
+    "ocean_d0"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Macro over calm water at dawn: fine drizzle starting to fall, first rings on the silky surface reflecting pale light",
+     "prompt": "Macro over calm water at dawn: fine drizzle starting to fall, first rings on the silky surface reflecting pale light. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pre-dawn blue hour, the moon low and pale, the eastern sky turning milky steel-blue, dense milky sea fog that erases the horizon, soft shadowless light. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static macro with slight drift. Fine drizzle falls; each drop makes a ring; the rings overlap and merge into one shared pattern; first pale dawn light in the drops. Pre-dawn blue hour, the moon low and pale, the eastern sky turning milky steel-blue, dense milky sea fog that erases the horizon, soft shadowless light. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 2.52,
+   "video_cost_list": 2.52,
+   "key_images": 6
+  },
+  {
+   "shot": "22",
+   "title": "«…и больше не искать земных ответов»",
+   "start_s": 149.5,
+   "end_s": 155.625,
+   "start_frame": 3588,
+   "end_frame": 3734,
+   "frames": 147,
+   "dur_s": 6.125,
+   "light": "D0",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "hero_walk",
+    "shallows_fog"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Medium shot from behind: the man wading into calm water up to his ankles, dense milky fog, horizon invisible",
+     "prompt": "Medium shot from behind: the man wading into calm water up to his ankles, dense milky fog, horizon invisible. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pre-dawn blue hour, the moon low and pale, the eastern sky turning milky steel-blue, dense milky sea fog that erases the horizon, soft shadowless light. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow follow from behind. the man in the charcoal wool overcoat wades deeper, ankle- then calf-deep; trousers darken with water; the fog erases the horizon until sea and sky are one milky space. Pre-dawn blue hour, the moon low and pale, the eastern sky turning milky steel-blue, dense milky sea fog that erases the horizon, soft shadowless light. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Costume continuity: wet trousers from here on.",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 6
+  },
+  {
+   "shot": "23",
+   "title": "«…прими меня, Великий Океан»",
+   "start_s": 155.625,
+   "end_s": 160.917,
+   "start_frame": 3735,
+   "end_frame": 3861,
+   "frames": 127,
+   "dur_s": 5.292,
+   "light": "D0",
+   "model": "kling3pro",
+   "gen_s": 6,
+   "takes": 4,
+   "refs": [
+    "shallows_fog",
+    "hero_back"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Extreme wide shot: a tiny figure standing in a milky continuum where sea and sky merge; perfectly calm mirror water",
+     "prompt": "Extreme wide shot: a tiny figure standing in a milky continuum where sea and sky merge; perfectly calm mirror water. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pre-dawn blue hour, the moon low and pale, the eastern sky turning milky steel-blue, dense milky sea fog that erases the horizon, soft shadowless light. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Camera slowly descends toward the mirror surface until the figure and its reflection form one symmetrical shape. Pre-dawn blue hour, the moon low and pale, the eastern sky turning milky steel-blue, dense milky sea fog that erases the horizon, soft shadowless light. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 2.88,
+   "video_cost_list": 2.88,
+   "key_images": 6
+  },
+  {
+   "shot": "24",
+   "title": "Капля",
+   "start_s": 160.917,
+   "end_s": 164.458,
+   "start_frame": 3862,
+   "end_frame": 3946,
+   "frames": 85,
+   "dur_s": 3.542,
+   "light": "D1",
+   "model": "kling3pro",
+   "gen_s": 4,
+   "takes": 4,
+   "refs": [
+    "pools_blue",
+    "hero_hands"
+   ],
+   "location": "POOLS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Extreme close-up at blue hour: a single drop hanging from a man's fingertip above perfectly still mirror water",
+     "prompt": "Extreme close-up at blue hour: a single drop hanging from a man's fingertip above perfectly still mirror water. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A flat rock platform at low tide with many small still tide pools reflecting the sky, rock walls on both sides. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Extreme slow motion: the drop falls and touches the mirror; a single clean ring spreads outward in silence. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Impact must land at 163.4 s.",
+   "video_cost": 1.92,
+   "video_cost_list": 1.92,
+   "key_images": 6
+  },
+  {
+   "shot": "25",
+   "title": "«Ты позволяешь мне всё — даже забыть Тебя»",
+   "start_s": 164.458,
+   "end_s": 170.208,
+   "start_frame": 3947,
+   "end_frame": 4084,
+   "frames": 138,
+   "dur_s": 5.75,
+   "light": "D1",
+   "model": "kling3pro",
+   "gen_s": 6,
+   "takes": 4,
+   "refs": [
+    "pools_blue",
+    "hero_back"
+   ],
+   "location": "POOLS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Top-down: a still rock pool at blue hour reflecting a man looking down into it — we see only his dark, slightly blurred reflection",
+     "prompt": "Top-down: a still rock pool at blue hour reflecting a man looking down into it — we see only his dark, slightly blurred reflection. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A flat rock platform at low tide with many small still tide pools reflecting the sky, rock walls on both sides. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static top-down. The water barely trembles; the reflection breathes subtly. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 2.88,
+   "video_cost_list": 2.88,
+   "key_images": 6
+  },
+  {
+   "shot": "26",
+   "title": "«…по крупицам искать и собирать Тебя»",
+   "start_s": 170.208,
+   "end_s": 175.958,
+   "start_frame": 4085,
+   "end_frame": 4222,
+   "frames": 138,
+   "dur_s": 5.75,
+   "light": "D1",
+   "model": "kling4",
+   "gen_s": 6,
+   "takes": 4,
+   "refs": [
+    "hero_hands",
+    "pools_blue"
+   ],
+   "location": "POOLS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Close-up: a man's cupped hands lifting water from a rock pool at blue hour",
+     "prompt": "Close-up: a man's cupped hands lifting water from a rock pool at blue hour. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A flat rock platform at low tide with many small still tide pools reflecting the sky, rock walls on both sides. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "He lifts water in his cupped hands; it trickles through his fingers back into the pool in thin silver threads. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Hands close-up — needs the hands reference.",
+   "video_cost": 4.51,
+   "video_cost_list": 5.64,
+   "key_images": 6
+  },
+  {
+   "shot": "27",
+   "title": "«Слишком тесно там, где я… начал играть в себя»",
+   "start_s": 175.958,
+   "end_s": 182.958,
+   "start_frame": 4223,
+   "end_frame": 4390,
+   "frames": 168,
+   "dur_s": 7.0,
+   "light": "D1",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "pools_blue",
+    "hero_back",
+    "hero_profile"
+   ],
+   "location": "POOLS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Tight medium shot past a row of small tide pools between rock walls, each pool showing the man's reflection from a different angle",
+     "prompt": "Tight medium shot past a row of small tide pools between rock walls, each pool showing the man's reflection from a different angle. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. A flat rock platform at low tide with many small still tide pools reflecting the sky, rock walls on both sides. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow lateral move along the row of pools; the reflections shift with the parallax; rock walls hem in the frame. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 6
+  },
+  {
+   "shot": "28",
+   "title": "«Я потерял Тебя, отождествившись с отражениями»",
+   "start_s": 182.958,
+   "end_s": 189.375,
+   "start_frame": 4391,
+   "end_frame": 4544,
+   "frames": 154,
+   "dur_s": 6.417,
+   "light": "D1→D2",
+   "model": "kling3pro",
+   "gen_s": 7,
+   "takes": 3,
+   "refs": [
+    "pools_blue"
+   ],
+   "location": "POOLS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Close top-down: his reflection in a still pool, pale sky behind it",
+     "prompt": "Close top-down: his reflection in a still pool, pale sky behind it. A flat rock platform at low tide with many small still tide pools reflecting the sky, rock walls on both sides. Blue hour, absolutely still water in rock pools acting as mirrors, soft shadowless pastel-blue light, pearl-grey sky reflected. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Same pool, calm again: only the reflected pale dawn sky, no reflection of the man",
+     "prompt": "Same pool, calm again: only the reflected pale dawn sky, no reflection of the man. A flat rock platform at low tide with many small still tide pools reflecting the sky, rock walls on both sides. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "A ripple runs across the pool and breaks the reflection into fragments; the fragments dissolve into the reflected sky; when the water calms, his reflection is gone — only sky and the first light remain. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Match-dissolve into shot 29.",
+   "video_cost": 2.52,
+   "video_cost_list": 2.52,
+   "key_images": 12
+  },
+  {
+   "shot": "29",
+   "title": "Утешение",
+   "start_s": 189.375,
+   "end_s": 205.208,
+   "start_frame": 4545,
+   "end_frame": 4924,
+   "frames": 380,
+   "dur_s": 15.833,
+   "light": "D2",
+   "model": "kling4",
+   "gen_s": 17,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "shallows_pearl",
+    "ocean_d2"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Extreme wide shot of the horizon at pearl dawn: a warm rose band under glowing sea fog, calm sea",
+     "prompt": "Extreme wide shot of the horizon at pearl dawn: a warm rose band under glowing sea fog, calm sea. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Medium shot from behind: the man standing in shallow water, gentle waves embracing his legs, the fog glowing warm",
+     "prompt": "Medium shot from behind: the man standing in shallow water, gentle waves embracing his legs, the fog glowing warm. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static on the horizon, then a slow approach to the man. The fog begins to glow from within; soft gentle waves touch his legs and retreat like a hand stroking; his shoulders drop as he exhales. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Starts with the female consolation at 189.50 s.",
+   "video_cost": 12.78,
+   "video_cost_list": 15.98,
+   "key_images": 12
+  },
+  {
+   "shot": "30",
+   "title": "Объятие",
+   "start_s": 205.208,
+   "end_s": 212.667,
+   "start_frame": 4925,
+   "end_frame": 5103,
+   "frames": 179,
+   "dur_s": 7.458,
+   "light": "D2",
+   "model": "kling3pro",
+   "gen_s": 8,
+   "takes": 3,
+   "refs": [
+    "shallows_pearl",
+    "aerial_shore"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Aerial above a tiny figure standing in mother-of-pearl shallows at dawn",
+     "prompt": "Aerial above a tiny figure standing in mother-of-pearl shallows at dawn. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Very slow rise; a soft warm ring of light gathers in the water around the figure, natural and subtle. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 2.88,
+   "video_cost_list": 2.88,
+   "key_images": 6
+  },
+  {
+   "shot": "31",
+   "title": "На колени",
+   "start_s": 212.667,
+   "end_s": 218.708,
+   "start_frame": 5104,
+   "end_frame": 5248,
+   "frames": 145,
+   "dur_s": 6.042,
+   "light": "D2",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "hero_profile",
+    "hero_kneel",
+    "shallows_pearl"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide profile: the man standing in calm shallows at pearl dawn",
+     "prompt": "Wide profile: the man standing in calm shallows at pearl dawn. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Same framing: he is kneeling in the water, the water at his hips, coat floating slightly",
+     "prompt": "Same framing: he is kneeling in the water, the water at his hips, coat floating slightly. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static. the man in the charcoal wool overcoat slowly lowers himself to his knees in the shallow water; the coat spreads and floats around him; the light warms. Pearl dawn: the sea fog glowing softly from within with warm mother-of-pearl light, a faint rose band along the horizon, calm silky water, very soft contrast. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Costume: coat wet to the waist from here.",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 12
+  },
+  {
+   "shot": "32",
+   "title": "«Прости меня, Великий Океан»",
+   "start_s": 218.708,
+   "end_s": 223.917,
+   "start_frame": 5249,
+   "end_frame": 5373,
+   "frames": 125,
+   "dur_s": 5.208,
+   "light": "D3",
+   "model": "kling4",
+   "gen_s": 6,
+   "takes": 4,
+   "refs": [
+    "hero_profile",
+    "hero_kneel",
+    "hero_face34"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Medium close-up in backlit profile: the man kneeling in water, head bowed, eyes closed, pearl light behind",
+     "prompt": "Medium close-up in backlit profile: the man kneeling in water, head bowed, eyes closed, pearl light behind. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl light turning to the first direct ray: the upper rim of the sun just appearing through thinning fog, soft warm gold touching the water. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static. He kneels with bowed head, breathing calmly; drops fall from his hair; tiny ripples around him. Pearl light turning to the first direct ray: the upper rim of the sun just appearing through thinning fog, soft warm gold touching the water. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Only face shot of the film: profile, backlit, never frontal.",
+   "video_cost": 4.51,
+   "video_cost_list": 5.64,
+   "key_images": 6
+  },
+  {
+   "shot": "33",
+   "title": "«…увы, то было пусто, но нет во мне ни боли… страха… грусти»",
+   "start_s": 223.917,
+   "end_s": 237.833,
+   "start_frame": 5374,
+   "end_frame": 5707,
+   "frames": 334,
+   "dur_s": 13.917,
+   "light": "D3",
+   "model": "kling4",
+   "gen_s": 14,
+   "takes": 4,
+   "refs": [
+    "hero_kneel",
+    "shallows_pearl",
+    "aerial_shore"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Top-down: the man kneeling in clear shallows; loops of his old footprints visible in the sand bottom around him",
+     "prompt": "Top-down: the man kneeling in clear shallows; loops of his old footprints visible in the sand bottom around him. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl light turning to the first direct ray: the upper rim of the sun just appearing through thinning fog, soft warm gold touching the water. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Very slow rise. Three gentle waves pass over the shallows one after another and smooth the footprint loops away until the sand is clean. Pearl light turning to the first direct ray: the upper rim of the sun just appearing through thinning fog, soft warm gold touching the water. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Three waves on «боли… страха… грусти» (232.8, 233.4, 235.1 s).",
+   "video_cost": 10.53,
+   "video_cost_list": 13.16,
+   "key_images": 6
+  },
+  {
+   "shot": "34",
+   "title": "«…выбор нам судьбою дан!»",
+   "start_s": 237.833,
+   "end_s": 244.125,
+   "start_frame": 5708,
+   "end_frame": 5858,
+   "frames": 151,
+   "dur_s": 6.292,
+   "light": "D3",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "hero_kneel",
+    "ocean_d3"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot from behind: the man kneeling in the shallows facing a fog bank",
+     "prompt": "Wide shot from behind: the man kneeling in the shallows facing a fog bank. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl light turning to the first direct ray: the upper rim of the sun just appearing through thinning fog, soft warm gold touching the water. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Same, closer: his head raised, the upper rim of the sun breaking through the fog on the horizon",
+     "prompt": "Same, closer: his head raised, the upper rim of the sun breaking through the fog on the horizon. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Pearl light turning to the first direct ray: the upper rim of the sun just appearing through thinning fog, soft warm gold touching the water. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow push-in. He raises his head toward the horizon; the upper rim of the sun breaks through the fog and the first direct ray touches the water. Pearl light turning to the first direct ray: the upper rim of the sun just appearing through thinning fog, soft warm gold touching the water. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Sun rim on «дан» (241.6–243.7 s).",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 12
+  },
+  {
+   "shot": "35",
+   "title": "«…Искрится светом Вечный Океан»",
+   "start_s": 244.125,
+   "end_s": 250.667,
+   "start_frame": 5859,
+   "end_frame": 6015,
+   "frames": 157,
+   "dur_s": 6.542,
+   "light": "D4",
+   "model": "kling3pro",
+   "gen_s": 7,
+   "takes": 3,
+   "refs": [
+    "ocean_d4"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Extreme wide aerial over the sea at sunrise, mist in layers, the sea starting to glitter",
+     "prompt": "Extreme wide aerial over the sea at sunrise, mist in layers, the sea starting to glitter. Open sea far from shore, long calm swells, no land visible. Sunrise: low warm sun, soft gold light, the ocean glittering with countless natural sun glints, backlit wave crests translucent gold and turquoise, layers of mist lifting. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Camera rises over the water; the sun climbs, the sea ignites with natural glints, mist lifts in layers. Sunrise: low warm sun, soft gold light, the ocean glittering with countless natural sun glints, backlit wave crests translucent gold and turquoise, layers of mist lifting. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Gen-4.5 A/B candidate (water physics).",
+   "video_cost": 2.52,
+   "video_cost_list": 2.52,
+   "key_images": 6
+  },
+  {
+   "shot": "36",
+   "title": "«…Он — Исток и Прародитель»",
+   "start_s": 250.667,
+   "end_s": 257.417,
+   "start_frame": 6016,
+   "end_frame": 6177,
+   "frames": 162,
+   "dur_s": 6.75,
+   "light": "D4",
+   "model": "kling3pro",
+   "gen_s": 7,
+   "takes": 3,
+   "refs": [
+    "ocean_d4"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Low over the water at sunrise flying along the sun path, wave crests backlit translucent gold and turquoise",
+     "prompt": "Low over the water at sunrise flying along the sun path, wave crests backlit translucent gold and turquoise. Open sea far from shore, long calm swells, no land visible. Sunrise: low warm sun, soft gold light, the ocean glittering with countless natural sun glints, backlit wave crests translucent gold and turquoise, layers of mist lifting. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Fast low flight along the sun path toward the horizon; backlit crests glow translucent gold and turquoise. Sunrise: low warm sun, soft gold light, the ocean glittering with countless natural sun glints, backlit wave crests translucent gold and turquoise, layers of mist lifting. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 2.52,
+   "video_cost_list": 2.52,
+   "key_images": 6
+  },
+  {
+   "shot": "37",
+   "title": "«…и для кого-то рок, но и учитель»",
+   "start_s": 257.417,
+   "end_s": 264.167,
+   "start_frame": 6178,
+   "end_frame": 6339,
+   "frames": 162,
+   "dur_s": 6.75,
+   "light": "D4",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "hero_kneel",
+    "hero_back",
+    "ocean_d4"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot: the man kneeling in the shallows at sunrise, a gentle wave approaching",
+     "prompt": "Wide shot: the man kneeling in the shallows at sunrise, a gentle wave approaching. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Sunrise: low warm sun, soft gold light, the ocean glittering with countless natural sun glints, backlit wave crests translucent gold and turquoise, layers of mist lifting. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "The man in the charcoal wool overcoat stands up from his knees; water streams from his coat; a gentle wave breaks against him and he stays standing, steady. Sunrise: low warm sun, soft gold light, the ocean glittering with countless natural sun glints, backlit wave crests translucent gold and turquoise, layers of mist lifting. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 6
+  },
+  {
+   "shot": "38",
+   "title": "«…однажды мы вернёмся в Океан»",
+   "start_s": 264.167,
+   "end_s": 270.708,
+   "start_frame": 6340,
+   "end_frame": 6496,
+   "frames": 157,
+   "dur_s": 6.542,
+   "light": "D4",
+   "model": "kling4",
+   "gen_s": 7,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "hero_walk",
+    "ocean_d4"
+   ],
+   "location": "SHALLOWS",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Medium shot from behind at sunrise: the man standing knee-deep facing the sun path",
+     "prompt": "Medium shot from behind at sunrise: the man standing knee-deep facing the sun path. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Vast calm shallows over smooth sand, the water ankle- to waist-deep, perfectly calm silky surface. Sunrise: low warm sun, soft gold light, the ocean glittering with countless natural sun glints, backlit wave crests translucent gold and turquoise, layers of mist lifting. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow follow. He takes the first step deeper toward the sun; warm light wraps around him. Sunrise: low warm sun, soft gold light, the ocean glittering with countless natural sun glints, backlit wave crests translucent gold and turquoise, layers of mist lifting. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 5.26,
+   "video_cost_list": 6.58,
+   "key_images": 6
+  },
+  {
+   "shot": "39",
+   "title": "Разрядка",
+   "start_s": 270.708,
+   "end_s": 283.792,
+   "start_frame": 6497,
+   "end_frame": 6810,
+   "frames": 314,
+   "dur_s": 13.083,
+   "light": "D5",
+   "model": "kling4",
+   "gen_s": 14,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "ocean_d5",
+    "aerial_shore"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Extreme wide aerial: vast golden sea, a tiny figure walking into the sun path, mist streaming",
+     "prompt": "Extreme wide aerial: vast golden sea, a tiny figure walking into the sun path, mist streaming. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Open sea far from shore, long calm swells, no land visible. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Long smooth aerial orbit. The tiny figure walks into the sun path; streams of mist; slow-motion backlit spray; soft light shafts in the haze. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "",
+   "video_cost": 10.53,
+   "video_cost_list": 13.16,
+   "key_images": 6
+  },
+  {
+   "shot": "40",
+   "title": "«Прими меня…»",
+   "start_s": 283.792,
+   "end_s": 290.958,
+   "start_frame": 6811,
+   "end_frame": 6982,
+   "frames": 172,
+   "dur_s": 7.167,
+   "light": "D5",
+   "model": "kling4",
+   "gen_s": 8,
+   "takes": 4,
+   "refs": [
+    "hero_back",
+    "ocean_d5"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot from behind at water level: the man waist-deep in the glittering sun path",
+     "prompt": "Wide shot from behind at water level: the man waist-deep in the glittering sun path. @hero is the man in the knee-length charcoal wool overcoat with the raised collar. Open sea far from shore, long calm swells, no land visible. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow follow at water level. He wades on; the edges of his silhouette are gradually swallowed by the dense sun glints on the water. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "\"Dissolution\" = real specular glare, not a VFX effect.",
+   "video_cost": 6.02,
+   "video_cost_list": 7.52,
+   "key_images": 6
+  },
+  {
+   "shot": "41",
+   "title": "«…однажды мы вернёмся в Океан»",
+   "start_s": 290.958,
+   "end_s": 296.583,
+   "start_frame": 6983,
+   "end_frame": 7117,
+   "frames": 135,
+   "dur_s": 5.625,
+   "light": "D5",
+   "model": "kling3pro",
+   "gen_s": 6,
+   "takes": 3,
+   "refs": [
+    "ocean_d5"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Telephoto 85 mm toward the horizon: a tiny silhouette barely distinguishable inside the sun glints",
+     "prompt": "Telephoto 85 mm toward the horizon: a tiny silhouette barely distinguishable inside the sun glints. Open sea far from shore, long calm swells, no land visible. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    },
+    {
+     "position": "last",
+     "description": "Same framing: only the sun path on the water, nobody",
+     "prompt": "Same framing: only the sun path on the water, nobody. Open sea far from shore, long calm swells, no land visible. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static telephoto. The tiny silhouette merges with the glittering sun path and is gone; only the light remains. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Gone by 296.6 s when the music fades.",
+   "video_cost": 2.16,
+   "video_cost_list": 2.16,
+   "key_images": 12
+  },
+  {
+   "shot": "42",
+   "title": "Эпилог — один план",
+   "start_s": 296.583,
+   "end_s": 316.083,
+   "start_frame": 7118,
+   "end_frame": 7585,
+   "frames": 468,
+   "dur_s": 19.5,
+   "light": "D5",
+   "model": "kling4",
+   "gen_s": 20,
+   "takes": 3,
+   "refs": [
+    "ocean_d5"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Locked-off wide shot of the horizon at sunrise, calm breathing sea, thin mist, sun low",
+     "prompt": "Locked-off wide shot of the horizon at sunrise, calm breathing sea, thin mist, sun low. Open sea far from shore, long calm swells, no land visible. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "One continuous locked-off take with an almost imperceptible push-in over 20 seconds. The water breathes gently, the sun climbs slowly, the mist thins. Nothing else happens. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Epilogue 298.97–316.08 s: no cuts, holds through the 1.63 s pause.",
+   "video_cost": 11.28,
+   "video_cost_list": 14.1,
+   "key_images": 6
+  },
+  {
+   "shot": "43",
+   "title": "Следы",
+   "start_s": 316.083,
+   "end_s": 325.5,
+   "start_frame": 7586,
+   "end_frame": 7811,
+   "frames": 226,
+   "dur_s": 9.417,
+   "light": "D5",
+   "model": "kling3pro",
+   "gen_s": 10,
+   "takes": 3,
+   "refs": [
+    "beach_morning"
+   ],
+   "location": "BEACH",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Wide shot of the empty beach in soft morning light: a line of footprints leading into the water",
+     "prompt": "Wide shot of the empty beach in soft morning light: a line of footprints leading into the water. A wide, empty Atlantic-style sandy beach with low dunes and marram grass behind, dark fine sand, a broad band of mirror-wet sand at the waterline, gentle spilling surf. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Slow lateral dolly. A wave slides up the sand and washes the footprints away. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Echo of shot 02, now warm.",
+   "video_cost": 3.6,
+   "video_cost_list": 3.6,
+   "key_images": 6
+  },
+  {
+   "shot": "44",
+   "title": "Кольцо",
+   "start_s": 325.5,
+   "end_s": 337.52,
+   "start_frame": 7812,
+   "end_frame": 8100,
+   "frames": 289,
+   "dur_s": 12.042,
+   "light": "D5",
+   "model": "kling3pro",
+   "gen_s": 13,
+   "takes": 3,
+   "refs": [
+    "ocean_d5"
+   ],
+   "location": "OPEN",
+   "keyframes": [
+    {
+     "position": "first",
+     "description": "Close-up of a calm golden water surface",
+     "prompt": "Close-up of a calm golden water surface. Open sea far from shore, long calm swells, no land visible. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps. Still frame from a feature film."
+    }
+   ],
+   "motion_prompt": "Static. A single ring spreads slowly from the centre of the frame across the golden water. Sun above a thin veil of mist, white-gold light, long glittering sun path, gentle god rays in the haze, restrained natural saturation. Real location photography, natural ocean physics, real water with true foam and spray, realistic skin and fabric texture, natural human movement with weight and balance. Photographed on an ARRI Alexa 35 with Cooke S4/i spherical primes, natural exposure, high dynamic range, fine 35 mm film grain, gentle halation only on the brightest speculars, 180-degree shutter motion blur, 24 fps.",
+   "avoid": "CGI, 3D render, video-game or Unreal look, plastic or waxy skin, artificial smooth water, fake foam, oversaturated colour, neon, excessive glow or bloom, lens-flare streaks, magic particles, sparkles, stars in daylight, planets, fantasy creatures, text, watermark, extra limbs, morphing faces, flicker, frozen still image with zoom",
+   "note": "Fade to warm light 334.6–337.5 s in the edit.",
+   "video_cost": 4.68,
+   "video_cost_list": 4.68,
+   "key_images": 6
+  }
+ ],
+ "references": {
+  "hero_back": "Hero — full body from behind, standing, hands in pockets (night, neutral backlight)",
+  "hero_walk": "Hero — walking, 3/4 back, mid-stride",
+  "hero_profile": "Hero — profile, standing, rim light",
+  "hero_hair_back": "Hero — back of head, collar and hair close-up",
+  "hero_hands": "Hero — hands (bare, weathered, no rings)",
+  "hero_kneel": "Hero — kneeling in shallow water, profile",
+  "hero_face34": "Hero — face 3/4, neutral, for internal consistency only (never shown frontally)",
+  "ocean_n1": "Ocean N1 — night, veiled moon",
+  "ocean_n2": "Ocean N2 — night, moon path",
+  "ocean_n4": "Ocean N4 — clearing",
+  "ocean_d0": "Ocean D0 — pre-dawn milky",
+  "ocean_d2": "Ocean D2 — pearl dawn",
+  "ocean_d3": "Ocean D3 — sun rim through fog",
+  "ocean_d4": "Ocean D4 — sunrise glitter",
+  "ocean_d5": "Ocean D5 — white-gold sun path",
+  "swash_foam": "Water — swash and foam lace on wet sand (texture reference)",
+  "beach_night": "Location — sandy beach with dunes, night",
+  "beach_predawn": "Location — same beach, pre-dawn fog",
+  "beach_morning": "Location — same beach, morning",
+  "basalt_night": "Location — basalt shore, night",
+  "pools_blue": "Location — tide pools, blue hour",
+  "shallows_fog": "Location — shallows in milky fog",
+  "shallows_pearl": "Location — shallows at pearl dawn",
+  "aerial_shore": "Location — aerial of the shoreline"
+ }
+}
